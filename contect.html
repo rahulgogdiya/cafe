@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Good Bakery Contact Page</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    width:100%;
+    overflow-x:hidden;
+    background:#f4f4f4;
+}
+
+/* MAIN SECTION */
+
+.gbs_contact_main_wrapper_x1{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    background:
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+}
+
+.gbs_contact_container_y2{
+    width:100%;
+    max-width:1200px;
+    display:flex;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 40px rgba(0,0,0,0.2);
+}
+
+/* LEFT SIDE */
+
+.gbs_left_side_a3{
+    width:45%;
+    padding:60px 40px;
+    background:linear-gradient(135deg,#7b3f00,#d2691e);
+    color:#fff;
+}
+
+.gbs_left_side_a3 h1{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.gbs_left_side_a3 p{
+    line-height:1.8;
+    margin-bottom:30px;
+    color:#f3f3f3;
+}
+
+.gbs_info_box_s4{
+    margin-bottom:25px;
+}
+
+.gbs_info_box_s4 h3{
+    margin-bottom:8px;
+    font-size:18px;
+}
+
+/* RIGHT SIDE */
+
+.gbs_right_side_b5{
+    width:55%;
+    padding:60px 40px;
+}
+
+.gbs_right_side_b5 h2{
+    font-size:34px;
+    margin-bottom:10px;
+    color:#222;
+}
+
+.gbs_right_side_b5 p{
+    margin-bottom:30px;
+    color:#777;
+}
+
+.gbs_input_group_d6{
+    margin-bottom:20px;
+}
+
+.gbs_input_group_d6 input,
+.gbs_input_group_d6 textarea{
+    width:100%;
+    padding:16px;
+    border:2px solid #ddd;
+    border-radius:12px;
+    font-size:15px;
+    outline:none;
+    transition:0.3s;
+}
+
+.gbs_input_group_d6 input:focus,
+.gbs_input_group_d6 textarea:focus{
+    border-color:#d2691e;
+}
+
+.gbs_input_group_d6 textarea{
+    height:140px;
+    resize:none;
+}
+
+.gbs_submit_btn_f7{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(135deg,#7b3f00,#d2691e);
+    color:#fff;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.gbs_submit_btn_f7:hover{
+    transform:translateY(-2px);
+}
+
+.gbs_success_message_h8{
+    width:100%;
+    padding:14px;
+    background:#d4edda;
+    color:#155724;
+    border-radius:10px;
+    margin-top:20px;
+    text-align:center;
+    font-weight:bold;
+    display:none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:991px){
+
+    .gbs_contact_container_y2{
+        flex-direction:column;
+    }
+
+    .gbs_left_side_a3,
+    .gbs_right_side_b5{
+        width:100%;
+    }
+
+    .gbs_left_side_a3{
+        padding:40px 25px;
+    }
+
+    .gbs_right_side_b5{
+        padding:40px 25px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .gbs_left_side_a3 h1{
+        font-size:30px;
+    }
+
+    .gbs_right_side_b5 h2{
+        font-size:28px;
+    }
+
+    .gbs_input_group_d6 input,
+    .gbs_input_group_d6 textarea{
+        padding:14px;
+        font-size:14px;
+    }
+
+    .gbs_submit_btn_f7{
+        font-size:16px;
+        padding:14px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="gbs_contact_main_wrapper_x1">
+
+<div class="gbs_contact_container_y2">
+
+    <!-- LEFT -->
+
+    <div class="gbs_left_side_a3">
+
+        <h1>Contact Us</h1>
+
+        <p>
+            Need information related to bakery products,
+            cafe services or support?
+            Fill out the form and contact us directly.
+        </p>
+
+        <div class="gbs_info_box_s4">
+            <h3>Email</h3>
+            <span>er.rahul291@gmail.com</span>
+        </div>
+
+        <div class="gbs_info_box_s4">
+            <h3>Company</h3>
+            <span>Good Bakery Store and Cafe Private Limited</span>
+        </div>
+
+        <div class="gbs_info_box_s4">
+            <h3>Support</h3>
+            <span>24×7 Customer Support Available</span>
+        </div>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="gbs_right_side_b5">
+
+        <h2>Send Message</h2>
+
+        <p>
+            Submit your details and we will contact you soon.
+        </p>
+
+        <form id="gbsContactFormOfficial">
+
+            <div class="gbs_input_group_d6">
+                <input type="text" id="name" placeholder="Full Name" required>
+            </div>
+
+            <div class="gbs_input_group_d6">
+                <input type="email" id="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="gbs_input_group_d6">
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+            </div>
+
+            <div class="gbs_input_group_d6">
+                <input type="text" id="subject" placeholder="Subject" required>
+            </div>
+
+            <div class="gbs_input_group_d6">
+                <textarea id="message" placeholder="Write Your Message..." required></textarea>
+            </div>
+
+            <button type="submit" class="gbs_submit_btn_f7">
+                Submit Message
+            </button>
+
+            <div class="gbs_success_message_h8" id="gbsSuccessBox">
+                Message Submitted Successfully
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+</section>
+
+<script>
+
+const gbsContactForm = document.getElementById("gbsContactFormOfficial");
+
+gbsContactForm.addEventListener("submit", async function(e){
+
+    e.preventDefault();
+
+    const formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
+    };
+
+    try{
+
+        await fetch("https://formsubmit.co/ajax/er.rahul291@gmail.com",{
+
+            method:"POST",
+
+            headers:{
+                "Content-Type":"application/json",
+                "Accept":"application/json"
+            },
+
+            body:JSON.stringify(formData)
+
+        });
+
+        document.getElementById("gbsSuccessBox").style.display = "block";
+
+        gbsContactForm.reset();
+
+        setTimeout(()=>{
+
+            document.getElementById("gbsSuccessBox").style.display = "none";
+
+        },4000);
+
+    }
+
+    catch(error){
+
+        alert("Something went wrong");
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
